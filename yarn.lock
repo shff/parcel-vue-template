@@ -6013,6 +6013,10 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
+vue-hot-reload-api@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
+
 vue-jest@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/vue-jest/-/vue-jest-2.4.1.tgz#50e2435cd9b298d996f71bbef759aceb33890812"
