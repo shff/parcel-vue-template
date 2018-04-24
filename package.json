@@ -33,6 +33,9 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-html": "^4.0.3",
     "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-vue": "^4.4.0",
     "eslint-watch": "^3.1.4",
     "husky": "^0.14.3",
@@ -58,10 +61,15 @@
     "extends": [
       "eslint:recommended",
       "plugin:vue/recommended",
+      "plugin:promise/recommended",
+      "plugin:jest/recommended",
       "airbnb-base"
     ],
     "plugins": [
-      "vue"
+      "vue",
+      "promise",
+      "no-loops",
+      "jest"
     ],
     "parserOptions": {
       "parser": "babel-eslint",
@@ -93,12 +101,11 @@
         "error",
         "double"
       ],
-      "indent": [
-        "off"
-      ],
-      "import/no-unresolved": [
-        "off"
-      ],
+      "promise/prefer-await-to-callbacks": "error",
+      "promise/prefer-await-to-then": "error",
+      "no-loops/no-loops": 2,
+      "indent": "off",
+      "import/no-unresolved": "off",
       "vue/max-attributes-per-line": "off"
     }
   }
