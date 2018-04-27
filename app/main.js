@@ -1,4 +1,4 @@
 import Vue from "vue";
-import * as components from "./*.vue";
+import * as components from "./components/*.vue";
 
-new Vue({ components, render: h => h("App") }).$mount("main");
+new Vue({ el: "main", components, render: h => h("App") });
