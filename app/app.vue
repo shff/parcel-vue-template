@@ -1,6 +1,6 @@
 <template>
   <main>
-    <img src="../assets/logo.png">
+    <img src="assets/logo.png">
     <div class="hello">
       <h1>Vue.js</h1>
     </div>

@@ -1,4 +1,4 @@
 {
   "presets": ["env"],
-  "plugins": ["transform-runtime", "import-glob"]
+  "plugins": ["transform-runtime"]
 }
