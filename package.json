@@ -6,6 +6,7 @@
     "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "serve": "parcel app/index.html --open",
     "lint": "eslint app/**/*.js app/**/*.vue",
+    "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
     "esw": "esw ./app --ext .js --ext .vue -w --color --clear",
     "test": "jest"
   },
@@ -39,6 +40,9 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-serializer-vue": "^1.0.0",
+    "stylelint": "^9.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-processor-html": "^1.0.0",
     "vue-jest": "^2.5.0"
   },
   "browserslist": [
@@ -106,5 +110,11 @@
       "import/no-unresolved": "off",
       "vue/max-attributes-per-line": "off"
     }
+  },
+  "stylelint": {
+    "processors": [
+      "stylelint-processor-html"
+    ],
+    "extends": "stylelint-config-standard"
   }
 }
