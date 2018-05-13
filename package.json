@@ -19,6 +19,7 @@
     "babel-preset-env": "^1.6.1",
     "less": "^3.0.4",
     "parcel-bundler": "^1.8.1",
+    "postcss-nested": "^3.0.0",
     "vue-hot-reload-api": "^2.3.0",
     "vue-template-compiler": "^2.5.16"
   },
@@ -50,6 +51,12 @@
     "last 8 versions",
     "ie 9"
   ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-nested": {}
+    }
+  },
   "jest": {
     "transform": {
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
