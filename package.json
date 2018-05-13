@@ -2,7 +2,9 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build app/index.html --public-url .",
-    "rebuild": "parcel build app/index.html --no-cache --public-url .",
+    "rebuild": "yarn clean && parcel build app/index.html --no-cache --public-url . && yarn purify",
+    "clean": "rm -r dist/",
+    "purify": "purifycss dist/*.css app/**/*.vue --min --out dist/*.css",
     "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "serve": "parcel app/index.html --open",
     "lint": "eslint app/**/*.js app/**/*.vue",
@@ -21,6 +23,7 @@
     "less": "^3.0.4",
     "parcel-bundler": "^1.8.1",
     "postcss-nested": "^3.0.0",
+    "purifycss": "^1.2.6",
     "vue-hot-reload-api": "^2.3.0",
     "vue-template-compiler": "^2.5.16"
   },
