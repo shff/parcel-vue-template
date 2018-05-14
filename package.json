@@ -3,7 +3,7 @@
   "scripts": {
     "build": "parcel build app/index.html --public-url .",
     "rebuild": "yarn clean && parcel build app/index.html --no-cache --public-url . && yarn purify",
-    "clean": "rm -r dist/",
+    "clean": "rimraf dist",
     "purify": "purifycss dist/*.css app/**/*.vue --min --out dist/*.css",
     "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "serve": "parcel app/index.html --open",
@@ -45,6 +45,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "jest-serializer-vue": "^1.0.0",
+    "rimraf": "^2.6.2",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0",
