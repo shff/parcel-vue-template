@@ -12,6 +12,7 @@
     "test": "mocha app test"
   },
   "dependencies": {
+    "tachyons": "^4.10.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
