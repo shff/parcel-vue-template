@@ -21,7 +21,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "less": "^3.0.4",
-    "parcel-bundler": "^1.8.1",
+    "parcel-bundler": "^1.9.0",
     "postcss-nested": "^3.0.0",
     "vue-hot-reload-api": "^2.3.0",
     "vue-template-compiler": "^2.5.16"
@@ -51,6 +51,15 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0",
     "vue-jest": "^2.6.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-runtime",
+      "import-glob"
+    ]
   },
   "browserslist": [
     "> 1%",
