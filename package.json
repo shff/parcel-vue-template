@@ -1,15 +1,15 @@
 {
   "license": "MIT",
   "scripts": {
-    "build": "parcel build app/index.html --public-url .",
-    "rebuild": "yarn clean && parcel build app/index.html --no-cache --public-url . && yarn purify",
-    "clean": "rimraf dist .cache",
-    "purify": "purifycss dist/*.css app/**/*.vue --min --out dist/*.css",
-    "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "serve": "parcel app/index.html --open",
+    "build": "parcel build app/index.html --public-url .",
+    "rebuild": "yarn clean && yarn build --no-cache && yarn purify",
+    "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
+    "purify": "purifycss dist/*.css app/**/*.vue --min --out dist/*.css",
+    "clean": "rimraf dist .cache",
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
-    "esw": "esw ./app --ext .js --ext .vue -w --color --clear",
+    "lint:watch": "esw ./app --ext .js --ext .vue -w --color --clear",
     "test": "jest"
   },
   "dependencies": {
