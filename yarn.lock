@@ -9,10 +9,10 @@
     "@babel/highlight" "7.0.0-beta.44"
 
 "@babel/code-frame@^7.0.0-beta.35":
-  version "7.0.0-beta.51"
-  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.51.tgz#bd71d9b192af978df915829d39d4094456439a0c"
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0-beta.52.tgz#192483bfa0d1e467c101571c21029ccb74af2801"
   dependencies:
-    "@babel/highlight" "7.0.0-beta.51"
+    "@babel/highlight" "7.0.0-beta.52"
 
 "@babel/generator@7.0.0-beta.44":
   version "7.0.0-beta.44"
@@ -52,17 +52,17 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@babel/highlight@7.0.0-beta.51":
-  version "7.0.0-beta.51"
-  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.51.tgz#e8844ae25a1595ccfd42b89623b4376ca06d225d"
+"@babel/highlight@7.0.0-beta.52":
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/highlight/-/highlight-7.0.0-beta.52.tgz#ef24931432f06155e7bc39cdb8a6b37b4a28b3d0"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
 "@babel/polyfill@^7.0.0-beta.51":
-  version "7.0.0-beta.51"
-  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.0.0-beta.51.tgz#f880a16825571729dceeb76a9bbe74c06321e756"
+  version "7.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@babel/polyfill/-/polyfill-7.0.0-beta.52.tgz#dcea55e5347e9cea92f5ef945c1a8417ea1d74d4"
   dependencies:
     core-js "^2.5.7"
     regenerator-runtime "^0.11.1"
@@ -388,11 +388,11 @@ autoprefixer@^6.3.1:
     postcss-value-parser "^3.2.3"
 
 autoprefixer@^8.0.0:
-  version "8.6.4"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.4.tgz#6bf501de426a3b95973f5d237dbcc9181e9904d2"
+  version "8.6.5"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-8.6.5.tgz#343f3d193ed568b3208e00117a1b96eb691d4ee9"
   dependencies:
     browserslist "^3.2.8"
-    caniuse-lite "^1.0.30000859"
+    caniuse-lite "^1.0.30000864"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^6.0.23"
@@ -842,14 +842,6 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-polyfill@^6.20.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
-  dependencies:
-    babel-runtime "^6.26.0"
-    core-js "^2.5.0"
-    regenerator-runtime "^0.10.5"
-
 babel-preset-env@^1.6.1, babel-preset-env@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.7.0.tgz#dea79fa4ebeb883cd35dab07e260c1c9c04df77a"
@@ -1225,12 +1217,12 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000862"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000862.tgz#6c1e296f8bbe5e5ea46f04215e8b90ed8fb9da8d"
+  version "1.0.30000864"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000864.tgz#35a4b2325a8d4553a46b516dbc233bf391d75555"
 
-caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000859:
-  version "1.0.30000862"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000862.tgz#7ca14f5079fa8f77ac814fca92d45deb4b7eff9d"
+caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864:
+  version "1.0.30000864"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000864.tgz#7a08c78da670f23c06f11aa918831b8f2dd60ddc"
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -2208,12 +2200,11 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint-watch@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-watch/-/eslint-watch-4.0.0.tgz#756031c8edcc02dd323c6d1677d2e528f4c076d6"
+eslint-watch@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-watch/-/eslint-watch-4.0.1.tgz#58fc846029e42dbb5d8c552a3636c26a69ed84ca"
   dependencies:
     "@babel/polyfill" "^7.0.0-beta.51"
-    babel-polyfill "^6.20.0"
     bluebird "^3.5.1"
     chalk "^2.1.0"
     chokidar "^2.0.0"
@@ -2884,8 +2875,8 @@ home-or-tmp@^2.0.0:
     os-tmpdir "^1.0.1"
 
 hosted-git-info@^2.1.4:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.6.1.tgz#6e4cee78b01bb849dcf93527708c69fdbee410df"
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
 
 html-comment-regex@^1.1.0:
   version "1.1.1"
@@ -3917,9 +3908,9 @@ left-pad@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/left-pad/-/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
 
-less@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/less/-/less-3.0.4.tgz#d27dcedbac96031c9e7b76f1da1e4b7d83760814"
+less@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/less/-/less-3.5.3.tgz#108f656b5ee09a281b757a603a80aa091acf6384"
   optionalDependencies:
     errno "^0.1.1"
     graceful-fs "^4.1.2"
@@ -5273,8 +5264,8 @@ promise@^7.1.1:
     asap "~2.0.3"
 
 prompts@^0.1.9:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/prompts/-/prompts-0.1.10.tgz#832cbf6116ecb121d6884e84643bb2cf92b3ed2c"
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/prompts/-/prompts-0.1.11.tgz#fdfac72f61d2887f4eaf2e65e748a9d9ef87206f"
   dependencies:
     clorox "^1.0.3"
     sisteransi "^0.1.1"
@@ -5496,10 +5487,6 @@ reflect-metadata@^0.1.10:
 regenerate@^1.2.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
-
-regenerator-runtime@^0.10.5:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
@@ -5969,7 +5956,7 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.3, source-map-support@^0.5.6:
+source-map-support@^0.5.3, source-map-support@^0.5.6, source-map-support@~0.5.6:
   version "0.5.6"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
   dependencies:
@@ -6366,11 +6353,12 @@ tar@^4:
     yallist "^3.0.2"
 
 terser@^3.7.3:
-  version "3.7.6"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-3.7.6.tgz#0b3c609f22278c089780ac1cdc63627071e3b96a"
+  version "3.7.7"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-3.7.7.tgz#f6d7b850908e93baf279023076f2bd60b6e500e6"
   dependencies:
     commander "~2.14.1"
     source-map "~0.6.1"
+    source-map-support "~0.5.6"
 
 test-exclude@^4.2.1:
   version "4.2.1"
