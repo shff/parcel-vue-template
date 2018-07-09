@@ -22,7 +22,6 @@
     "babel-preset-env": "^1.6.1",
     "less": "^3.5.3",
     "parcel-bundler": "^1.9.4",
-    "postcss-nested": "^3.0.0",
     "typescript": "^2.9.2",
     "vue-hot-reload-api": "^2.3.0",
     "vue-template-compiler": "^2.5.16"
@@ -69,8 +68,7 @@
   ],
   "postcss": {
     "plugins": {
-      "autoprefixer": {},
-      "postcss-nested": {}
+      "autoprefixer": {}
     }
   },
   "jest": {
