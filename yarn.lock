@@ -197,10 +197,6 @@ ajv@^6.0.1, ajv@^6.5.0:
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
-  dependencies:
-    kind-of "^3.0.2"
-    longest "^1.0.1"
-    repeat-string "^1.5.2"
 
 alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
   version "1.0.2"
@@ -4010,10 +4006,6 @@ longest-streak@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-2.0.2.tgz#2421b6ba939a443bb9ffebf596585a50b4c38e2e"
 
-longest@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
-
 loose-envify@^1.0.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
@@ -4722,6 +4714,12 @@ parcel-bundler@^1.9.4:
     tomlify-j0.4 "^3.0.0"
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
+
+parcel-plugin-purifycss@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-purifycss/-/parcel-plugin-purifycss-1.0.0.tgz#877ef3cb18daf96138ba8f284d240791ffea9ed4"
+  dependencies:
+    purifycss "^1.2.6"
 
 parse-asn1@^5.0.0:
   version "5.1.1"
