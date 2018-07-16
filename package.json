@@ -9,7 +9,7 @@
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
     "lint:watch": "esw ./app --ext .js --ext .vue -w --color --clear",
-    "test": "jest"
+    "test": "mocha app test"
   },
   "dependencies": {
     "vue": "^2.5.16"
@@ -31,26 +31,21 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.5",
-    "babel-jest": "^23.2.0",
     "eslint": "^5.1.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-vue": "^4.4.0",
     "eslint-watch": "^4.0.1",
     "husky": "^0.14.3",
-    "jest": "^23.3.0",
-    "jest-serializer-vue": "^2.0.2",
-    "jest-vue-preprocessor": "^1.4.0",
+    "jasmine": "^3.1.0",
     "rimraf": "^2.6.2",
     "stylelint": "^9.3.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-processor-html": "^1.0.0",
-    "vue-jest": "^2.6.0"
+    "stylelint-processor-html": "^1.0.0"
   },
   "babel": {
     "presets": [
@@ -71,28 +66,17 @@
       "autoprefixer": {}
     }
   },
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue-preprocessor"
-    },
-    "modulePathIgnorePatterns": [
-      "/node_modules/"
-    ]
-  },
   "eslintConfig": {
     "extends": [
       "eslint:recommended",
       "plugin:vue/recommended",
       "plugin:promise/recommended",
-      "plugin:jest/recommended",
       "airbnb-base"
     ],
     "plugins": [
       "vue",
       "promise",
-      "no-loops",
-      "jest"
+      "no-loops"
     ],
     "parserOptions": {
       "parser": "babel-eslint",
