@@ -9,7 +9,7 @@
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
     "lint:watch": "esw ./app --ext .js --ext .vue -w --color --clear",
-    "test": "mocha app test"
+    "test": "jasmine"
   },
   "dependencies": {
     "tachyons": "^4.10.0",
