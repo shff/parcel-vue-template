@@ -1,7 +1,9 @@
 import Vue from "vue";
-import "tachyons";
-import * as Components from "./components/**/*.vue";
+import AtUI from "at-ui";
+import "at-ui-style";
 
-Object.values(Components).map(a => a.name && Vue.component(a.name, a));
+import App from "./components/app";
 
-new Vue({ render: h => h("app") }).$mount("main");
+Vue.use(AtUI);
+
+new Vue({ render: h => h(App) }).$mount("main");
