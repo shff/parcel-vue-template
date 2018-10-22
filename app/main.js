@@ -1,7 +1,9 @@
 import Vue from "vue";
-import "tachyons";
-import * as Components from "./components/**/*.vue";
+import Buefy from "buefy"
+import "buefy/dist/buefy.css"
 
-Object.values(Components).map(a => a.name && Vue.component(a.name, a));
+import App from "./components/application/app.vue";
 
-new Vue({ render: h => h("app") }).$mount("main");
+Vue.use(Buefy)
+
+new Vue({ render: h => h(App) }).$mount("main");
