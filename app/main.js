@@ -1,7 +1,9 @@
 import Vue from "vue";
-import "tachyons";
-import * as Components from "./components/**/*.vue";
+import KeenUI from 'keen-ui';
+import 'keen-ui/dist/keen-ui.css';
 
-Object.values(Components).map(a => a.name && Vue.component(a.name, a));
+import App from "./components/app.vue";
 
-new Vue({ render: h => h("app") }).$mount("main");
+Vue.use(KeenUI);
+
+new Vue({ render: h => h(App) }).$mount("main");
