@@ -4,7 +4,6 @@
     "serve": "parcel app/index.html --open",
     "build": "parcel build app/index.html --public-url .",
     "rebuild": "yarn clean && yarn build --no-cache",
-    "deploy": "yarn rebuild && echo '/* /index.html 200' >| dist/_redirects && netlify -p dist",
     "clean": "rimraf dist .cache",
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
