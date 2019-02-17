@@ -12,52 +12,46 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^2.6.6"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.2.0",
-    "babel-core": "^6.26.0",
-    "babel-plugin-import-glob": "^2.0.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
-    "less": "^3.8.1",
-    "parcel-bundler": "^1.10.3",
-    "parcel-plugin-inliner": "^1.0.1",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@vue/component-compiler-utils": "^2.5.2",
+    "parcel": "^1.10.3",
+    "parcel-plugin-inliner": "^1.0.3",
     "parcel-plugin-purifycss": "^1.0.2",
-    "vue-hot-reload-api": "^2.3.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-hot-reload-api": "^2.3.2",
+    "vue-template-compiler": "^2.6.6"
   },
   "optionalDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.25",
+    "@vue/test-utils": "^1.0.0-beta.29",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.7.0",
+    "eslint": "^5.14.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-html": "^4.0.6",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-unicorn": "^6.0.1",
-    "eslint-plugin-vue": "^4.7.1",
+    "eslint-plugin-unicorn": "^7.1.0",
+    "eslint-plugin-vue": "^5.2.1",
     "eslint-watch": "^4.0.2",
-    "husky": "^1.1.2",
-    "jasmine": "^3.2.0",
-    "rimraf": "^2.6.2",
-    "stylelint": "^9.6.0",
+    "jasmine": "^3.3.1",
+    "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-processor-html": "^1.0.0"
   },
   "babel": {
     "presets": [
-      "env"
+      "@babel/env"
     ],
     "plugins": [
-      "transform-runtime",
-      "import-glob"
+      "@babel/transform-runtime"
     ]
   },
   "browserslist": [
-    ">0.25%",
+    ">0.6%",
     "not ie 11",
     "not op_mini all"
   ],
