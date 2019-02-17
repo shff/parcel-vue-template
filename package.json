@@ -82,23 +82,6 @@
       }
     },
     "rules": {
-      "max-len": [
-        "error",
-        {
-          "code": 80
-        }
-      ],
-      "vue/html-indent": [
-        "error",
-        2
-      ],
-      "vue/script-indent": [
-        "error",
-        2,
-        {
-          "baseIndent": 1
-        }
-      ],
       "quotes": [
         "error",
         "double"
