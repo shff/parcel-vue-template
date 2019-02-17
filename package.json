@@ -12,7 +12,6 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "tachyons": "^4.11.1",
     "vue": "^2.5.17"
   },
   "devDependencies": {
