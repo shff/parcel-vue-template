@@ -5096,24 +5096,10 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.8.tgz#6844890aab9c635af868ad5fecc62e8acbba3ea4"
   integrity sha512-6i0HVbUfcKaTv+EG8ZTr75az7GFXcLYk9UyLEg7Notv/Ma+z/UG3TCoz6GiNeOrn1E/e63I0X/Hpw18jHOTUnA==
 
-parcel-plugin-inliner@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-inliner/-/parcel-plugin-inliner-1.0.3.tgz#260931dc0d98dc3fc4895b8ffd0b2b45d3e47258"
-  integrity sha512-kcCNKZMF43pq8bhBGHTBI35Th1iV+JH5BVIwfde7I/Cs4mZXno6F5uEwVtHFawdQ3DxsswZco0SEvRmRenZvSA==
-  dependencies:
-    inliner "^1.13.1"
-
-parcel-plugin-purifycss@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-purifycss/-/parcel-plugin-purifycss-1.0.2.tgz#d35bbe130fed7816396a29c212218d47c9325c66"
-  integrity sha512-IYvTjIKNQuSooOGnhwIeVSMGk+Y6SUWfWj/sFnFVwyhz/WqNIdKDuku8caZx2ZzaCHv7UkrG/lykrq588/zKVQ==
-  dependencies:
-    purifycss "^1.2.6"
-
-parcel@^1.10.3:
+parcel-bundler@^1.11.0:
   version "1.11.0"
-  resolved "https://registry.yarnpkg.com/parcel/-/parcel-1.11.0.tgz#d420cfa4d1286c5d760b090ed0f5ae7db353a694"
-  integrity sha512-5blcx/pgzqlRvF2PbRzRXpzEHDYQa34U2yRx+psqZ3y5CJQgAydIsQIwa5tRabgOVgSyTMPrBXS/jUFvafaQ5Q==
+  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.11.0.tgz#7e821a5246d7503aebf3c1bc279b59cbb8a3d4e3"
+  integrity sha512-H0w/Obx76vWiG+UtofznfcHZJBmd6JA5iCn7zrGBINyVAh+Nt/JLD6QDROghHLXfJkO4XyczsB+fO+nPbXlFfA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -5171,6 +5157,20 @@ parcel@^1.10.3:
     terser "^3.7.3"
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
+
+parcel-plugin-inliner@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-inliner/-/parcel-plugin-inliner-1.0.3.tgz#260931dc0d98dc3fc4895b8ffd0b2b45d3e47258"
+  integrity sha512-kcCNKZMF43pq8bhBGHTBI35Th1iV+JH5BVIwfde7I/Cs4mZXno6F5uEwVtHFawdQ3DxsswZco0SEvRmRenZvSA==
+  dependencies:
+    inliner "^1.13.1"
+
+parcel-plugin-purifycss@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-purifycss/-/parcel-plugin-purifycss-1.0.2.tgz#d35bbe130fed7816396a29c212218d47c9325c66"
+  integrity sha512-IYvTjIKNQuSooOGnhwIeVSMGk+Y6SUWfWj/sFnFVwyhz/WqNIdKDuku8caZx2ZzaCHv7UkrG/lykrq588/zKVQ==
+  dependencies:
+    purifycss "^1.2.6"
 
 parent-module@^1.0.0:
   version "1.0.0"
