@@ -7,7 +7,7 @@
     "clean": "rimraf dist .cache",
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
-    "lint:watch": "esw ./app --ext .js --ext .vue -w --color --clear",
+    "lint:watch": "esw app/**/*.vue app/*.vue -w --color --clear",
     "test": "jasmine"
   },
   "dependencies": {
