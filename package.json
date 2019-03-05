@@ -19,7 +19,7 @@
     "@vue/component-compiler-utils": "^2.6.0",
     "parcel-bundler": "^1.11.0",
     "parcel-plugin-inliner": "^1.0.6",
-    "parcel-plugin-purifycss": "^1.0.5",
+    "postcss-remove-unused-css": "^1.0.4",
     "vue-hot-reload-api": "^2.3.3",
     "vue-template-compiler": "^2.6.8"
   },
@@ -56,7 +56,15 @@
   ],
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-remove-unused-css": {
+        "path": "./app",
+        "exts": [
+          ".js",
+          ".vue",
+          ".html"
+        ]
+      }
     }
   },
   "eslintConfig": {
