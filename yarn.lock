@@ -4457,10 +4457,32 @@ pako@~1.0.5:
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
   integrity sha512-0DTvPVU3ed8+HNXOu5Bs+o//Mbdj9VNQMUOe9oKCwh8l0GNwpTDMKCWbRjgtD291AWnkAgkqA/LOnQS8AmS1tw==
 
-parcel-bundler@^1.11.0:
+parcel-plugin-compress@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-compress/-/parcel-plugin-compress-1.0.7.tgz#f00b367a51ec441871e5327a0e110cbeef61a32a"
+  integrity sha512-nJo/4JI6srnsw9QpRgQPFGRvHpd0ZqpeXVjOSLzIrLKs4Lb5KPwFNAsUn9yPDAanA3bgGd4Vy2w5pwyY6aVYhw==
+  dependencies:
+    "@gfx/zopfli" "1.0.10"
+    brotli "1.3.2"
+    chalk "2.4.2"
+    cosmiconfig "5.0.7"
+    filesize "4.0.0"
+    grapheme-breaker "0.3.2"
+    iltorb "2.4.1"
+    p-queue "3.0.0"
+    strip-ansi "5.0.0"
+
+parcel-plugin-inliner@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-inliner/-/parcel-plugin-inliner-1.0.6.tgz#bf453824460c0d82dc2a30a316c4a4095516c7a0"
+  integrity sha512-Y6osNDXm2WwoiDlxxY9oGXM36PLq/3dM3MXWxwwZpz/l5ewSked3zD8dJ9LJUzslPoTWKeLbJVU+O8kUvF486A==
+  dependencies:
+    posthtml-inline-assets "^3.0.0"
+
+parcel@^1.11.0:
   version "1.11.0"
-  resolved "https://registry.yarnpkg.com/parcel-bundler/-/parcel-bundler-1.11.0.tgz#7e821a5246d7503aebf3c1bc279b59cbb8a3d4e3"
-  integrity sha512-H0w/Obx76vWiG+UtofznfcHZJBmd6JA5iCn7zrGBINyVAh+Nt/JLD6QDROghHLXfJkO4XyczsB+fO+nPbXlFfA==
+  resolved "https://registry.yarnpkg.com/parcel/-/parcel-1.11.0.tgz#d420cfa4d1286c5d760b090ed0f5ae7db353a694"
+  integrity sha512-5blcx/pgzqlRvF2PbRzRXpzEHDYQa34U2yRx+psqZ3y5CJQgAydIsQIwa5tRabgOVgSyTMPrBXS/jUFvafaQ5Q==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -4518,28 +4540,6 @@ parcel-bundler@^1.11.0:
     terser "^3.7.3"
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
-
-parcel-plugin-compress@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-compress/-/parcel-plugin-compress-1.0.7.tgz#f00b367a51ec441871e5327a0e110cbeef61a32a"
-  integrity sha512-nJo/4JI6srnsw9QpRgQPFGRvHpd0ZqpeXVjOSLzIrLKs4Lb5KPwFNAsUn9yPDAanA3bgGd4Vy2w5pwyY6aVYhw==
-  dependencies:
-    "@gfx/zopfli" "1.0.10"
-    brotli "1.3.2"
-    chalk "2.4.2"
-    cosmiconfig "5.0.7"
-    filesize "4.0.0"
-    grapheme-breaker "0.3.2"
-    iltorb "2.4.1"
-    p-queue "3.0.0"
-    strip-ansi "5.0.0"
-
-parcel-plugin-inliner@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/parcel-plugin-inliner/-/parcel-plugin-inliner-1.0.6.tgz#bf453824460c0d82dc2a30a316c4a4095516c7a0"
-  integrity sha512-Y6osNDXm2WwoiDlxxY9oGXM36PLq/3dM3MXWxwwZpz/l5ewSked3zD8dJ9LJUzslPoTWKeLbJVU+O8kUvF486A==
-  dependencies:
-    posthtml-inline-assets "^3.0.0"
 
 parent-module@^1.0.0:
   version "1.0.0"
