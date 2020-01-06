@@ -36,7 +36,7 @@
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-unicorn": "^12.0.1",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^6.1.2",
     "eslint-watch": "^6.0.1",
     "jasmine": "^3.5.0",
     "stylelint": "^11.0.0",
