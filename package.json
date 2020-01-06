@@ -11,7 +11,7 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "vue": "^2.6.8"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -23,7 +23,7 @@
     "parcel-plugin-inliner": "^1.0.6",
     "postcss-remove-unused-css": "^1.0.4",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.8"
+    "vue-template-compiler": "^2.6.11"
   },
   "optionalDependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
