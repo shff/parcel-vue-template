@@ -8,7 +8,9 @@
     "lint": "eslint app/**/*.js app/**/*.vue",
     "lint:css": "stylelint '**/*.less' '**/*.vue' --syntax less",
     "lint:watch": "esw app/**/*.vue app/*.vue -w --color --clear",
-    "test": "jasmine"
+    "test": "jasmine",
+    "prettify": "prettier --write ./**/*.js ./**/*.vue",
+    "e2e": "cypress run -C false --config video=false,integrationFolder=app,supportFile=false,pluginsFile=false,testFiles=**/*.spec.js"
   },
   "dependencies": {
     "vue": "^2.6.11"
@@ -18,6 +20,7 @@
     "@babel/plugin-transform-runtime": "^7.8.0",
     "@babel/preset-env": "^7.8.2",
     "@vue/component-compiler-utils": "^3.1.1",
+    "normalize-html-whitespace": "^1.0.0",
     "parcel": "^1.12.4",
     "parcel-plugin-compress": "^1.1.0",
     "parcel-plugin-inliner": "^1.0.6",
@@ -28,17 +31,22 @@
   "optionalDependencies": {
     "@vue/test-utils": "^1.0.0-beta.30",
     "babel-eslint": "^10.0.3",
+    "cypress": "^4.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-plugin-html": "^6.0.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-unicorn": "^15.0.1",
     "eslint-plugin-vue": "^6.1.2",
     "eslint-watch": "^6.0.1",
+    "husky": "^4.2.3",
     "jasmine": "^3.5.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
     "stylelint": "^13.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-processor-html": "^1.0.0"
@@ -70,15 +78,20 @@
     }
   },
   "eslintConfig": {
+    "ignorePatterns": [
+      "**/*.spec.js",
+      "node_modules/"
+    ],
     "extends": [
       "eslint:recommended",
+      "plugin:prettier/recommended",
       "plugin:vue/recommended",
       "plugin:promise/recommended",
-      "plugin:unicorn/recommended",
-      "airbnb-base"
+      "plugin:unicorn/recommended"
     ],
     "plugins": [
       "vue",
+      "prettier",
       "promise",
       "no-loops",
       "unicorn"
@@ -92,16 +105,9 @@
       }
     },
     "rules": {
-      "quotes": [
-        "error",
-        "double"
-      ],
       "promise/prefer-await-to-callbacks": "error",
       "promise/prefer-await-to-then": "error",
-      "no-loops/no-loops": 2,
-      "indent": "off",
-      "import/no-unresolved": "off",
-      "vue/max-attributes-per-line": "off"
+      "no-loops/no-loops": 2
     }
   },
   "stylelint": {
@@ -109,5 +115,16 @@
       "stylelint-processor-html"
     ],
     "extends": "stylelint-config-standard"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,css,json,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
