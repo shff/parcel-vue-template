@@ -22,7 +22,7 @@
     "@vue/component-compiler-utils": "^3.1.2",
     "normalize-html-whitespace": "^1.0.0",
     "parcel": "^1.12.4",
-    "parcel-plugin-compress": "^2.0.0",
+    "parcel-plugin-compress": "^2.0.1",
     "parcel-plugin-inliner": "^1.0.14",
     "postcss-remove-unused-css": "^1.0.4",
     "vue-hot-reload-api": "^2.3.4",
