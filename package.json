@@ -47,7 +47,7 @@
     "jasmine": "^3.5.0",
     "lint-staged": "^10.2.8",
     "prettier": "^1.19.1",
-    "stylelint": "^13.5.0",
+    "stylelint": "^13.6.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-processor-html": "^1.0.0"
   },
