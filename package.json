@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
-    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.4",
     "@babel/preset-env": "^7.10.3",
     "@vue/component-compiler-utils": "^3.1.2",
     "normalize-html-whitespace": "^1.0.0",
