@@ -13,7 +13,7 @@
     "e2e": "cypress run -C false --config video=false,integrationFolder=app,supportFile=false,pluginsFile=false,testFiles=**/*.spec.js"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
@@ -26,7 +26,7 @@
     "parcel-plugin-inliner": "^1.0.14",
     "postcss-remove-unused-css": "^1.0.4",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.12"
   },
   "optionalDependencies": {
     "@vue/test-utils": "^1.0.4",
