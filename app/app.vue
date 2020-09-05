@@ -1,7 +1,5 @@
 <template>
-  <main>
-    Hello, Vue.js!
-  </main>
+  <main>Hello, Vue.js!</main>
 </template>
 
 <script>
