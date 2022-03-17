@@ -45,7 +45,7 @@
     "eslint-watch": "^7.0.0",
     "husky": "^7.0.4",
     "jasmine": "^4.0.2",
-    "lint-staged": "^12.3.5",
+    "lint-staged": "^12.3.6",
     "prettier": "^2.5.1",
     "stylelint": "^14.5.3",
     "stylelint-config-standard": "^25.0.0",
