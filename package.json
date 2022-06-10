@@ -44,7 +44,7 @@
     "eslint-plugin-vue": "^9.1.0",
     "eslint-watch": "^7.0.0",
     "husky": "^8.0.1",
-    "jasmine": "^4.1.0",
+    "jasmine": "^4.2.0",
     "lint-staged": "^13.0.1",
     "prettier": "^2.6.2",
     "stylelint": "^14.9.0",
